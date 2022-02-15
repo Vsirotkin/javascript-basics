@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson5 dir3 task6</title>
+  </head>
+  <body>
+    <button id="button">set attributes for h1</button>
+
+    <h1>Заголовок</h1>
+
+    <!-- Задание. Добавьте заголовку атрибут data-one="один" и атрибут
+    data-two="два" с помощью метода setAttribute. -->
+
+    <script>
+      "use strict";
+      const buttonSetter = document.getElementById("button");
+      const head1 = document.querySelector("h1");
+
+      buttonSetter.onclick = function () {
+        head1.setAttribute("data-one", "один"); //первым указаываем имя атрибута, куда хотим внести изменения, вторым - значение, которое будет присвоено атрибуту
+        head1.setAttribute("data-two", "два");
+      };
+    </script>
+  </body>
+</html>

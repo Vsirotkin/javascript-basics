@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 5 dir 3 task 2</title>
+  </head>
+
+  <body>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <button class="switch-button" type="button">Switch Active</button>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Задание. Найдите элемент с классом .nav-link и используя метод toggle из свойства classList
+    у элемента, добавьте или уберите класс .active. -->
+
+    <script>
+      "use strict";
+
+      const page = document.querySelector(".nav-link"); // находим класс nav-link
+      const themeButton = document.querySelector(".switch-button"); // находим кнопку
+
+      // функция для создания и удаления .active в классе .nav-link
+      themeButton.onclick = function () {
+        page.classList.toggle("active"); // функция рубильника
+      };
+    </script>
+  </body>
+</html>

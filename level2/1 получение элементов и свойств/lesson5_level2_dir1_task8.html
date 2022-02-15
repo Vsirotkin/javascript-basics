@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson5 level2 dir1 task8</title>
+  </head>
+  <body>
+    <button id="button">add tag b</button><br />
+    <b>Lorem, ipsum.</b>
+    <b class="sign">Lorem, ipsum.</b>
+    <b class="sign">Lorem, ipsum.</b>
+    <b>Lorem, ipsum.</b>
+
+    <!-- 
+    Задание.
+    1. Получите все теги b.
+    2. С помощью метода contains() из classList, проверьте, есть ли у тега
+    класс sign, и если нет, то тогда добавьте с помощью метода add()
+    -->
+
+    <script>
+      "use strict";
+
+      let collectTagsB = document.querySelectorAll("b");
+
+      button.onclick = () => {
+        collectTagsB.forEach(function (tagB) {
+          if (!tagB.classList.contains("sign")) {
+            tagB.classList.add("sign");
+          }
+        });
+      };
+    </script>
+  </body>
+</html>

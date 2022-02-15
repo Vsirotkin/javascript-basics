@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 5 dir 3 task 3</title>
+  </head>
+
+  <body>
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Remove Dropdown
+      </button>
+      <div class="menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+    <!-- Задание. Найдите элемент с классом .dropdown-menu и удалите этот класс, используя свойство
+    classList у элемента, и метод remove(). -->
+
+    <script>
+      "use strict";
+
+      let removeMenu = document.querySelector(".dropdown-menu"); // выбираем class dropdown-menu
+      let themeButton = document.getElementById("dropdownMenuButton"); // находим кнопку
+
+      // создаем функцию для кнопки чтобы удалить class dropdown-menu
+      themeButton.onclick = function () {
+        removeMenu.classList.remove("dropdown-menu");
+      };
+    </script>
+  </body>
+</html>

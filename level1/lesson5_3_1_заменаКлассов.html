@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 3 task 1 addElem</title>
+  </head>
+  <body>
+    <!-- option 1: добавляем id -->
+    <ul id="mark">
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+    </ul>
+
+    <!-- option 2: без добавления id
+    <ul>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+    </ul> -->
+
+    <!-- Задание. Найдите тег ul. И добавьте ему класс one. -->
+
+    <script>
+      "use strict";
+
+      // option 1
+      document.getElementById("mark").classList.add("one"); // находим по id, добавляем класс
+
+      // option 2 без добавления id
+      // const ul = document.querySelector("ul"); // используем querySelector, так как нам нужен лишь первый подходящий по запросу элемент
+      // ul.classList.add("one"); // добавляем класс
+    </script>
+  </body>
+</html>

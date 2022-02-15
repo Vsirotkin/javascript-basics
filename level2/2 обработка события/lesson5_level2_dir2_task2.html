@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>level2_dir2_task2</title>
+  </head>
+  <body>
+    <a id="button" href="#">
+      <p class="first second third">Lorem ipsum dolor sit.</p>
+    </a>
+
+    <!-- 
+    Задание.
+    1. Назначьте обработку клика по параграфу, у функции обработчика объявите  параметр event.
+    2. При клике выведите в консоль event.target.classList
+    3. Переберите с помощью forEach event.target.classList и выведите каждый класс
+    в консоль.
+    -->
+
+    <script>
+      "use strict";
+      const paragClick = document.querySelector("p");
+      button.onclick = paragClick.addEventListener("click", function (event) {
+        console.log(event.target.classList);
+        event.target.classList.forEach((arg) => {
+          console.log(arg);
+        });
+      });
+    </script>
+  </body>
+</html>

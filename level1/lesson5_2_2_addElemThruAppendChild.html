@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 5 dir 2 task 2</title>
+  </head>
+  <body>
+    <div></div>
+
+    <!-- Задание. Добавьте в div c помощью appendChild следующую разметку:
+    <h3>hello world</h3>
+    -->
+
+    <script>
+      "use strict";
+      const div = document.querySelector("div"); // находим и выбираем div
+      const child = document.createElement("h3"); // создаем элемент h3
+      child.innerText = "hello world"; // выводим текст в h3
+      div.appendChild(child); // добавляем дочерний документ в родителя
+    </script>
+  </body>
+</html>

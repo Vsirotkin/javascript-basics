@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson5 dir3 task5</title>
+  </head>
+
+  <body>
+    <button
+      id="button"
+      type="button"
+      class="close"
+      data-dismiss="modal"
+      aria-label="Close"
+    >
+      get Attribute in console
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+    <!-- Задание. Выведите в консоль значение атрибутов data-dismiss
+    и aria-label с помощью метода getAttribute. -->
+
+    <script>
+      "use strict";
+
+      let buttonGetAttribut = document.getElementById("button"); // находим кнопку
+      let showDismiss = button.getAttribute("data-dismiss"); // получаем атрибут
+      let showLabel = button.getAttribute("aria-label"); // получаем атрибут
+
+      // создаем функцию для кнопки для вывода заданных атрибутов в консоль
+      buttonGetAttribut.onclick = function () {
+        console.log(showDismiss);
+        console.log(showLabel);
+      };
+    </script>
+  </body>
+</html>
